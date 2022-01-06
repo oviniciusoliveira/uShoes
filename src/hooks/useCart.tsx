@@ -30,7 +30,7 @@ const CartContext = createContext<CartContextData>({} as CartContextData);
 
 export function CartProvider({ children }: CartProviderProps): JSX.Element {
   const [cart, setCart] = useState<Product[]>(() => {
-    const storagedCart = localStorage.getItem("@RocketShoes:cart");
+    const storagedCart = localStorage.getItem("@uShoes:cart");
 
     if (!storagedCart) return [];
     return JSON.parse(storagedCart);
@@ -45,7 +45,7 @@ export function CartProvider({ children }: CartProviderProps): JSX.Element {
 
   useEffect(() => {
     if (cartPreviousValue !== cart) {
-      localStorage.setItem("@RocketShoes:cart", JSON.stringify(cart));
+      localStorage.setItem("@uShoes:cart", JSON.stringify(cart));
     }
   }, [cart, cartPreviousValue])
 

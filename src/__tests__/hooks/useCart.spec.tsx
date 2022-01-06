@@ -120,7 +120,7 @@ describe('useCart Hook', () => {
       ])
     );
     expect(mockedSetItemLocalStorage).toHaveBeenCalledWith(
-      '@RocketShoes:cart',
+      '@uShoes:cart',
       JSON.stringify(result.current.cart)
     );
   });
@@ -200,7 +200,7 @@ describe('useCart Hook', () => {
       ])
     );
     expect(mockedSetItemLocalStorage).toHaveBeenCalledWith(
-      '@RocketShoes:cart',
+      '@uShoes:cart',
       JSON.stringify(result.current.cart)
     );
   });
@@ -268,7 +268,7 @@ describe('useCart Hook', () => {
       ])
     );
     expect(mockedSetItemLocalStorage).toHaveBeenCalledWith(
-      '@RocketShoes:cart',
+      '@uShoes:cart',
       JSON.stringify(result.current.cart)
     );
   });
@@ -330,7 +330,7 @@ describe('useCart Hook', () => {
       ])
     );
     expect(mockedSetItemLocalStorage).toHaveBeenCalledWith(
-      '@RocketShoes:cart',
+      '@uShoes:cart',
       JSON.stringify(result.current.cart)
     );
   });
